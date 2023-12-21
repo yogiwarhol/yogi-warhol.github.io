@@ -13,7 +13,10 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+    return function(value) {
+        return value > base;
+
+    };
     
     
     
@@ -27,7 +30,9 @@ function createGreaterThanFilter(base) {
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+    return function(value) {
+        return value < base;
+    };
     
     
     
@@ -41,7 +46,9 @@ function createLessThanFilter(base) {
  */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
+    return function(str) {
+        return str.charAt(0) ===startsWith;
+    };
     
     
     
@@ -55,7 +62,9 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
+    return function(str) {
+        return str.charAt(str.length -1) === endsWith
+    };
     
     
     
@@ -71,8 +80,14 @@ function createEndsWithFilter(endsWith) {
  */
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
-    
+    // create a new array to store the modify string 
+    var diffStrings = [];
+    //use for loop method for each string in the input array
+    for (let i = 0 < strings.length; i++) {
+
+    }
+    //return the string
+    return diffStrings
     
     
     // YOUR CODE ABOVE HERE //
@@ -89,9 +104,15 @@ function modifyStrings(strings, modify) {
  */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
+    //usr the for loop methid to loop thru each string
+    for (let i = 0; i < strings.legnth; i++) {
+        //if it fiales the test then return false
+        if(!test(strings[i])) {
+            return false
+        }
+    }
     
-    
-    
+    return false;
     
     // YOUR CODE ABOVE HERE //
 }

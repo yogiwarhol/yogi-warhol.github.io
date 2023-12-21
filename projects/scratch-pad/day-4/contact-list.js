@@ -35,8 +35,36 @@
 
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
-
+return {
+    id: id,
+    nameFirst: nameFirst,
+    nameLast: nameLast
+  };
 } 
+//create a function called make contact list 
+function makeContactList() {
+    var contacts = [];
+    return {
+        length: functions() {
+            return contacts.length;
+        },
+        addContacts: function(contact) {
+            contacts.push(contact);
+        },
+        findContatc: function(fullName) {
+            var [firstName, lastName] = fullName.spilit(' ');
+            return contacts.find(contact => contact.nameFist === firstName && contact.nameLast === lastName);
+        
+    },removeContact: function(contact) {
+        var index = contact.indexOf(contact);
+        if(index !== -1) {
+            contact.splice(index, 1);
+        }
+    },
+    printAllContactNames:function() {
+        re
+    }
+}
 
 
 function makeContactList() {
