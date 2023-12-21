@@ -48,21 +48,24 @@ function makeContactList() {
         length: functions() {
             return contacts.length;
         },
-        addContacts: function(contact) {
+        addContact: function(contact) {
             contacts.push(contact);
         },
-        findContatc: function(fullName) {
-            var [firstName, lastName] = fullName.spilit(' ');
-            return contacts.find(contact => contact.nameFist === firstName && contact.nameLast === lastName);
+        findContact: function(fullName) {
+            return contacts.find(contact =>) {
+            var fullNameInList = '${contact.nameFirst} ${contact.nameLast}';
+            return fullNameInList ===fullName;
+            });
         
-    },removeContact: function(contact) {
-        var index = contact.indexOf(contact);
+    },
+    removeContact: function(contact) {
+        var index = contacts.indexOf(contact);
         if(index !== -1) {
             contact.splice(index, 1);
         }
     },
     printAllContactNames:function() {
-        re
+        return contacts.map(contact => '${contact.nameFirst} ${contact.nameLast}').joinh('\n');
     }
 }
 

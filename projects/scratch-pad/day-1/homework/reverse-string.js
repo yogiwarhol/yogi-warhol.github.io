@@ -23,13 +23,13 @@ function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
     
     //create a variable to collect the revered string
-    var reversedString = ''
+    var reversedString = '';
     //use the for loop method to iterate through each character of the input string
     for (let i = input.length - 1; i >= 0; i--) {
       //concatenate/add each character to the revered string
       reversedString += input[i];
     }
-    
+    return reversedString;
     // YOUR CODE GOES ABOVE HERE //
 }
 

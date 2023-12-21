@@ -23,21 +23,19 @@
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    var result = [];
+    const result = [];
 
-    if(start <= end) {
-
-        for(let i = start; i <= end; i++) {
-            result.push(i);
-        }
-    } else {
-
-        for(let i = start; i >= end; i--) {
-            result.push(i);
-
-        }
+    // Determine the direction of the range
+    const step = start <= end ? 1 : -1;
+  
+    // Use a loop to generate the range
+    for (let i = start; start <= end ? i <= end : i >= end; i += step) {
+      result.push(i);
     }
+  
+    // Return the generated range
     return result;
+  
     
     
     // YOUR CODE GOES ABOVE HERE //

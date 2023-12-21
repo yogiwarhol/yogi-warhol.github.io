@@ -168,8 +168,15 @@ return stringOne.length >= stringTwo.length ? stringOne : stringTwo;
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-var result = (stringOne || '').localeCompare(stringTwo || '');
-return result > 0 ? 1 : result < 0 ? -1 : 0;
+    var comparisonResult = (stringOne || '').localeCompare(stringTwo || '');
+
+    if (comparisonResult > 0) {
+      return 1;
+    } else if (comparisonResult < 0) {
+      return -1;
+    } else {
+      return 0;
+    }
 
     // YOUR CODE ABOVE HERE //
 }
@@ -184,10 +191,15 @@ return result > 0 ? 1 : result < 0 ? -1 : 0;
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-var comparisonResult = stringTwo.localeCompare(stringOne);
+    var comparisonResult = (stringTwo || '').localeCompare(stringOne || '');
 
-return comparisonResults > 0 ? 1 : comparisonResult < 0 ? -1 : 0;
-
+    if (comparisonResult > 0) {
+      return 1;
+    } else if (comparisonResult < 0) {
+      return -1;
+    } else {
+      return 0;
+    }
 
 
     // YOUR CODE ABOVE HERE //
