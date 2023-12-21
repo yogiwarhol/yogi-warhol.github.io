@@ -12,7 +12,12 @@
  */
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
-  
+  //use for loop method to foward ove rthe array and print value
+  for (let i = 0; < array.length; i++) {
+    console.log(array[i]);
+  }
+
+
   
   
   
@@ -25,7 +30,10 @@ function printArrayValues(array) {
  */
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
-  
+  //use for loop method to backward over the array and print to the console
+  for (let i = array.length - 1; i >= 0; i--) {
+    console.log(array[i]);
+  }
   
   
   
@@ -37,7 +45,8 @@ function printArrayValuesInReverse(array) {
  */
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
+  // using the object.key to get array of objects kets and returning
+  return object.keys(object);
   
   
   
@@ -50,7 +59,10 @@ function getObjectKeys(object) {
  */
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  
+  //use the loop methid to loop over the object keys andprint each one to the console
+  for (let key in object) {
+    console.log(key);
+  }
   
   
   
@@ -62,7 +74,8 @@ function printObjectKeys(object) {
  */
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
+  //use the object .vakues to get the array of the obejects values
+  return getObjectKeys.values(objects);
   
   
   
@@ -75,7 +88,10 @@ function getObjectValues(object) {
  */
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
+  // use the loop methid over the object keys and orint to the console 
+  for (let key in object) {
+    console.log(object[key]);
+  }
   
   
   
@@ -87,7 +103,7 @@ function printObjectValues(object) {
  */
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
-  
+  return objects.keys(object).length;
   
   
   
@@ -100,7 +116,12 @@ function getObjectLength(object) {
  */
 function printObjectValuesInReverse(object) {
   // YOUR CODE BELOW HERE //
-  
+  //create anothr varaible and get the array of the objectkeys and reverse it 
+  var reversedKeys = Object.keys(object).reverse();
+  //use loop methid thru the reveered keys and print to the console
+  for (let key of reversedKeys){
+    console.log(object[key]);
+  }
   
   
   
