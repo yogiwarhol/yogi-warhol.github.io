@@ -76,8 +76,8 @@ function printObjectKeys(object) {
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
   //use the object .vakues to get the array of the obejects values
-  return getObjectKeys.values(objects);
-  
+  var valuesArray = Object.values(object);
+  return valuesArray;
   
   
   // YOUR CODE ABOVE HERE //
@@ -104,9 +104,9 @@ function printObjectValues(object) {
  */
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
-  var entriesArray = object.entries(object);
-  return entriesArray.length;
-  
+var keysArray = Object.keys(object);
+var length = keysArray.length;
+return length;
   
   
   // YOUR CODE ABOVE HERE //
