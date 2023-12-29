@@ -168,11 +168,11 @@ return stringOne.length >= stringTwo.length ? stringOne : stringTwo;
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    var comparisonResult = (stringOne || '').localeCompare(stringTwo || '');
+    var comparisonResult = stringOne.localeCompare(stringTwo);
 
-    if (comparisonResult > 0) {
+    if (comparisonResult < 0) {
       return 1;
-    } else if (comparisonResult < 0) {
+    } else if (comparisonResult > 0) {
       return -1;
     } else {
       return 0;
@@ -191,7 +191,7 @@ function sortAscending(stringOne, stringTwo) {
  */
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    var comparisonResult = (stringTwo || '').localeCompare(stringOne || '');
+    var comparisonResult = stringOne.localeCompare(stringTwo);
 
     if (comparisonResult > 0) {
       return 1;
