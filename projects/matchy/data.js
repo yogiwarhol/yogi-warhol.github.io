@@ -13,25 +13,29 @@
 //////////////////////////////////////////////////////////////////////
 var animal = {};
 animal.species = "Fish";
-animal['name'] = "turbo";
+animal["name"] = "turbo";
 animal.noises = [];
+animal["noises"] = [];
 console.log(animal);
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Array Creation ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-var noises = {};
-noises[0] = 'flipper';
-noises.push('watergun');
-noises.unshift('flap');
+var noises = []];
+noises[0] = "flipper";
+noises.push("watergun");
+noises.unshift("flap");
 var newNoise = "dance"
 noises[noises.length] = newNoise
+console.log(noises.length);
+console.log(noises[noises.length - 1]);
+console.log(noises)
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+animals['noises'] = noises;
+animal.noises.push("clap")
 
 /* *******************************************************************
  * Step 4 - Review
